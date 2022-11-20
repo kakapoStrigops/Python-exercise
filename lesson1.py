@@ -19,3 +19,15 @@ current = []
 N = 6
 # 辺の個数
 M = 8
+
+# 各点での未探索の辺の番号の初期化
+for i in range(N+1):
+    current.append(edgefirst[i])
+
+# 探索済みの経路の辺の格納位置を初期化
+top = 1
+# 確定済みの経路の辺の格納位置を初期化
+last = M
+# 出発点は点1
+x = 1
+
