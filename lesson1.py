@@ -31,3 +31,11 @@ last = M
 # 出発点は点1
 x = 1
 
+while last >= 1:
+    if(current[x] != 0):
+        temp = current[x]
+        searched[top] = temp
+        current[x] = edgenext[temp]
+        x = end[temp]
+        top =+ 1
+    else:
